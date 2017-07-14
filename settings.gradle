@@ -1,0 +1,3 @@
+include ':app', ':dependencies'
+
+project(':dependencies').projectDir = new File(settingsDir, 'BuildSrc')
