@@ -4,14 +4,14 @@
 buildscript {
     repositories {
         jcenter()
-        maven {url uri('../repo')}
+        maven {url 'https://raw.githubusercontent.com/yaming116/Dependencies/master/repo'}
     }
     dependencies {
-        // classpath 'com.github.yaming116:dependencies:1.0.9'
+        classpath 'com.github.yaming116:dependencies:1.0.0'
     }
 }
 apply plugin: 'com.android.application'
-// apply plugin: 'zeus-plugin'
+apply plugin: 'zeus-plugin'
 
 android {
     compileSdkVersion 25
@@ -38,8 +38,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
 }
 
-// ZeusConfig{
-//     isApp = false
-//     pluginName = "test"
-//     pluginMainClass = "com.teset"
-// }
+ZeusConfig{
+    isApp = false
+    pluginName = "test"
+    pluginMainClass = "com.teset"
+}
