@@ -34,6 +34,8 @@ ZeusConfig{
 
 ```
 
+运行 **gradlew GenerateZeusMetaTask**
+
 
 License
 ===
