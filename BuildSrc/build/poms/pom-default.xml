@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.yaming116</groupId>
   <artifactId>dependencies</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.9</version>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

@@ -1,0 +1,8 @@
+{
+   "name" : "test", 
+   "minVersion" : "1", 
+   "version" : "1", 
+   "mainClass" : "com.teset" 
+   "otherInfo" : "null" 
+   "flag" : "null" 
+}

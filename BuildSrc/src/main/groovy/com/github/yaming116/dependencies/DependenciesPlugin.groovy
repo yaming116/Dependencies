@@ -13,13 +13,9 @@ class DependenciesPlugin implements Plugin<Project> {
         project.task('GenerateZeusMetaTask', type: GenerateZeusMetaTask)
 
         if (project.ZeusConfig.isApp) {
-            project.dependencies{
-                compile project.fileTree(include: ['*.jar'], dir: 'sdk-jars')
-            }
+            project.dependencies.add("compile", project.fileTree(include: ['*.jar'], dir: 'sdk-jars'))
         }else {
-            project.dependencies{
-                provided project.fileTree(include: ['*.jar'], dir: 'sdk-jars')
-            }
+            project.dependencies.add("provided", project.fileTree(include: ['*.jar'], dir: 'sdk-jars'))
         }
     }
 }

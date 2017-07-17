@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.yaming116" module="dependencies" revision="1.0.6" status="integration" publication="20170714181320">
+  <info organisation="com.github.yaming116" module="dependencies" revision="1.0.9" status="integration" publication="20170717091550">
     <description/>
   </info>
   <configurations>

@@ -7,7 +7,7 @@ buildscript {
         maven {url uri('../repo')}
     }
     dependencies {
-        classpath 'com.github.yaming116:dependencies:1.0.6'
+        classpath 'com.github.yaming116:dependencies:1.0.9'
     }
 }
 apply plugin: 'com.android.application'
@@ -40,4 +40,6 @@ dependencies {
 
 ZeusConfig{
     isApp = false
+    pluginName = "test"
+    pluginMainClass = "com.teset"
 }
