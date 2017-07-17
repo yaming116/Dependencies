@@ -22,7 +22,7 @@ configurations {
     compile.extendsFrom provided
 }
 
-version = '1.0.9'
+version = '1.0.0'
 group = 'com.github.yaming116'
 archivesBaseName = 'dependencies'
 
@@ -58,8 +58,8 @@ def projectName = "MonkeyRelease"
 def mavenDesc = 'MonkeyRelease'
 def baseUrl = 'https://github.com/yaming116'
 def siteUrl = baseUrl
-def gitUrl = "${baseUrl}/MonekyRelease.git"
-def issueUrl = "${baseUrl}/MonekyRelease/issues"
+def gitUrl = "${baseUrl}/Dependencies.git"
+def issueUrl = "${baseUrl}/Dependencies/issues"
 
 def licenseIds = ['Apache-2.0']
 def licenseNames = ['The Apache Software License, Version 2.0']
