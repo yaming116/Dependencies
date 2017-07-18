@@ -20,11 +20,14 @@ buildscript {
         compile 'com.github.yaming116:dependencies:1.0.0'
     }
 }
+ext{
+    //这个需要在声明插件之前，否则不起效果
+    isApp = true
+}
 apply plugin: 'zeus-plugin'
 
 
 ZeusConfig{
-    isApp = false
     pluginName = "test" //必填
     pluginMainClass = "com.teset" //必填
     pluginMinVersion = 1 //可以不填写，默认值为：1

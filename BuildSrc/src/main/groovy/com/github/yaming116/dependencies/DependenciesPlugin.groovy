@@ -12,9 +12,11 @@ class DependenciesPlugin implements Plugin<Project> {
 
         project.task('GenerateZeusMetaTask', type: GenerateZeusMetaTask)
 
-        if (project.ZeusConfig.isApp) {
+        if (project.ext.isApp) {
+            println "当前是app"
             project.dependencies.add("compile", project.fileTree(include: ['*.jar'], dir: 'sdk-jars'))
         }else {
+            println "当前是插件"
             project.dependencies.add("provided", project.fileTree(include: ['*.jar'], dir: 'sdk-jars'))
         }
     }

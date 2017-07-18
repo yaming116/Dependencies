@@ -11,15 +11,13 @@ class GenerateZeusMetaTask extends DefaultTask {
 
         println 'start run GenerateZeusMetaTask'
 
-        println project.ZeusConfig.isApp
         println project.ZeusConfig.pluginName
         println project.ZeusConfig.pluginVersion
         println project.ZeusConfig.pluginMinVersion
         println project.ZeusConfig.pluginMainClass
         println project.ZeusConfig.metaFileName
 
-        if (project.ZeusConfig.isApp) {
-
+        if (project.ext.isApp) {
             println "当前打包是独立运行的App"
             return
         }

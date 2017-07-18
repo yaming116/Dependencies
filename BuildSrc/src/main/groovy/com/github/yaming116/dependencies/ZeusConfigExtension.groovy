@@ -2,7 +2,6 @@ package com.github.yaming116.dependencies
 
 
 class ZeusConfigExtension{
-    def isApp = false
     def pluginName = null
     def pluginMinVersion = 1
     def pluginVersion = 1
@@ -10,4 +9,18 @@ class ZeusConfigExtension{
     def metaFileName = "zeusplugin.meta"
     def otherInfo = ""
     def flag = ""
+
+
+    @Override
+    public String toString() {
+        return "ZeusConfigExtension{" +
+                ", pluginName=" + pluginName +
+                ", pluginMinVersion=" + pluginMinVersion +
+                ", pluginVersion=" + pluginVersion +
+                ", pluginMainClass=" + pluginMainClass +
+                ", metaFileName=" + metaFileName +
+                ", otherInfo=" + otherInfo +
+                ", flag=" + flag +
+                '}';
+    }
 }

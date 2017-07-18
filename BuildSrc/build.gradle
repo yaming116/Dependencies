@@ -54,8 +54,10 @@ compileGroovy {
 }
 
 
-def projectName = "MonkeyRelease"
-def mavenDesc = 'MonkeyRelease'
+
+
+def projectName = "Dependencies"
+def mavenDesc = 'Dependencies'
 def baseUrl = 'https://github.com/yaming116'
 def siteUrl = baseUrl
 def gitUrl = "${baseUrl}/Dependencies.git"
@@ -106,6 +108,7 @@ install {
         }
     }
 }
+
 
 task sourcesJar(type: Jar) {
     from sourceSets.main.allGroovy
