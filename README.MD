@@ -17,7 +17,7 @@ buildscript {
         maven {url 'https://raw.githubusercontent.com/yaming116/Dependencies/master/repo'}
     }
     dependencies {
-        compile 'com.github.yaming116:dependencies:1.0.0'
+        classpath 'com.github.yaming116:dependencies:1.0.0'
     }
 }
 ext{
