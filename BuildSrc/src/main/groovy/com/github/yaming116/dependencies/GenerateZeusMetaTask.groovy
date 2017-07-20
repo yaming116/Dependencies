@@ -36,7 +36,7 @@ class GenerateZeusMetaTask extends DefaultTask {
         def metaFileName = "zeusplugin.meta"
 
         if (project.ZeusConfig.metaFileName != null) {
-            metaFileName = project.ZeusConfig.metaFileName + ".meta"
+            metaFileName = project.ZeusConfig.metaFileName
         }
 
         def rootDir = project.projectDir.absolutePath
